@@ -1,21 +1,16 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-
 # Site
-title: Hexo
-subtitle:
-description:
-keywords:
-author: John Doe
-language:
-timezone:
+title: 程明锐的个人网站|人生若只如初见，何事悲风秋画扇
+subtitle: #
+description: 偶尔努力，时常颓废的矛盾综合体，也不清楚自己喜欢什么，从小到大坚持最久的大概就是睡觉跟吃饭吧，但是很高兴与你在这里相遇。希望我们能一起进步
+author: 程明锐
+language: zh-Hans
+timezone: #
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: passages/:title/
 permalink_defaults:
 
 # Directory
@@ -73,7 +68,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: ad
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
