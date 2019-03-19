@@ -1,0 +1,103 @@
+---
+title: 工作中npm常用的包
+date: 2017-8-30
+categories: NPM
+tags:
+  - axios
+  - express
+  - cheerio
+  - cors
+---
+
+> 写这篇文章，主要目的为，记录一些平常工作用到的一些包，免得忘记
+
+<!-- more -->
+
+## axios
+
+> 官网对它的解释说，它是可以靠 `XMLhttpRequest` 运行在浏览器中，也可以在后台依靠 `http`模块运行在服务器中请求。
+> 它基于 ES6 的 `promise`的 http 库
+
+ - 从浏览器中创建 `XMLHttpRequests`
+ 
+ - 从 `node.js` 创建 `http` 请求
+ 
+ - 支持 `Promise API`
+
+ - 拦截请求和响应
+
+ - 转换请求数据和响应数据
+ 
+ - 取消请求
+ 
+ - 自动转换 JSON 数据
+ 
+ - 客户端支持防御 XSRF
+
+[https://www.kancloud.cn/yunye/axios/234845](https://www.kancloud.cn/yunye/axios/234845 "axios的中文用法说明网站")
+
+## express
+
+> 被称之为最好的 `http` 模块封装。兼容原生的node内的 `http` 模块，可以与原生的方法一起用。只不过比原生的更方便一些。
+
+
+```javascript
+  const express = require("express");
+  const app = express();//创建服务器对象。
+  app,set() //可以设置一些模板文件。
+  app.use("/view",express.static("./view")) //这个表示将view目录下的文件由服务器托管。 
+  // `express.static` 为 `expresss`模块唯一的内置中间件,可以将指定文件目录下的文件交由服务器托管。可以设置虚拟文件夹
+   app.use() //注册中间件。
+  app.get("/",(req.res)=>{  //这个就是监听用户用get请求请求根路径时做出什么响应。
+    //req:为用户端传过来的数据。
+    //res:为服务器响应的数据。
+  })
+  app.listen("3000",()=>{
+    console.log("服务器跑在 http：//127.0.0.1:3000 端口上了")
+  })
+```
+
+## cheerio
+
+> 可以类似于jQuery中，传入一个dom元素，就可以获取它那中的某个元素。
+
+```javascript
+  //下列代码是用node服务器做的一个简单爬虫demo
+  const express = require('express');
+  const cheerio = require('cheerio');
+  const axios = require('axios');
+  const path = require("path");
+  const template = require('art-template')
+  const app = express();
+  app.get("/book", (req, res) => {
+      axios.get("https://www.biquke.com/bq/0/990/").then((result) => {
+          let $ = cheerio.load(result.data)  
+//result.data其实就是网页的源代码，连带HTML，然后cheerio 包可以加载该字符串，返回的值就可以选择它字符串中任意一个元素。
+          let book = [];
+          $("#list dd a").each(function (i, e) {
+              let obj ={
+                  title:$(e).text(),
+                  herf:$(e).attr('href')
+              }
+              book.push(obj);
+          })
+          let temstr = template(path.join(__dirname,'views/index.html'),{book:book})
+          res.send(temstr);
+  
+      })
+  })
+ app.listen("3002",()=>{
+    console.log("爬虫服务器开启在http:127.0.0.1:30002上了") 
+ })
+```
+
+
+##  cors包模块
+
+> 可以解决跨域问题，引入 cors 包 
+
+```javascript
+// 在 API 服务器端，启用 CORS 跨域资源共享
+  const cors = require('cors')
+  app.use(cors())  //用创造的服务器对象中的use方法注册cors 中间件。
+```
