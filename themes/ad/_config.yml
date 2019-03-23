@@ -41,7 +41,7 @@ copyright:
 # 建站时间. 格式：YYYY-MM-DD
 start_time: "2019-03-10"
 
-# 如何开启 评论&统计 插件：https://godbmw.com/passages/2018-11-15-theme-bmw-docs-zh/
+# 如何开启 评论&统计
 # 请申请自己的 appid 和 appkey，并且替换下面的 appid 和 appkey
 leancloud:
   appid: ry19ixO4PYVKU8xjTT8OHLXz-gzGzoHsz # 填写您的appid
@@ -80,9 +80,9 @@ reward:
   -
     src: /images/wechat.png
     alt: "WeChat"
-  -
-    src: /images/alipay.png
-    alt: "AliPay"
+  # -
+  #   src: /images/alipay.png
+  #   alt: "AliPay"
 
 nav:
   -
@@ -114,24 +114,24 @@ footer:
       - 
         name: "阮一峰的个人网站"
         path: "http://ruanyifeng.com/"
-  -
-    title: "系列教程"
-    children:
-      -
-        name: "webpack4系列教程"
-        path: "https://godbmw.com/categories/webpack4%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B/"
-      -
-        name: "设计模式手册"
-        path: "https://godbmw.com/design-patterns/"
-  -
-    title: "抓到我"
-    children: 
-      -
-        name: "掘金"
-        path: "https://juejin.im/user/5b91fcf06fb9a05d3c7fd4a5"
-      -
-        name: "思否"
-        path: "https://segmentfault.com/"
+  # -
+  #   title: "系列教程"
+  #   children:
+  #     -
+  #       name: "webpack4系列教程"
+  #       path: "https://godbmw.com/categories/webpack4%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B/"
+  #     -
+  #       name: "设计模式手册"
+  #       path: "https://godbmw.com/design-patterns/"
+  # -
+    # title: "抓到我"
+    # children: 
+    #   -
+    #     name: "掘金"
+    #     path: "https://juejin.im/user/5b91fcf06fb9a05d3c7fd4a5"
+    #   -
+    #     name: "思否"
+    #     path: "https://segmentfault.com/"
 
 footer_contact: "Email: 18327866033@163.com"
 
