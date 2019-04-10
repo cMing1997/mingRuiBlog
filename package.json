@@ -5,6 +5,19 @@
     "hexo": {
         "version": "3.8.0"
     },
+    "yuqueConfig": {
+        "baseUrl": "https://www.yuque.com/api/v2",
+        "login": "wuxin-6kvfk",
+        "repo": "nb",
+        "mdNameFormat": "title",
+        "postPath": "source/_posts/yuque"
+    },
+    "scripts": {
+        "sync": "yuque-hexo sync",
+        "clean:yuque": "yuque-hexo clean",
+        "deploy": "npm run sync && hexo clean && hexo g -d",
+        "dev": "hexo clean && hexo server"
+    },
     "dependencies": {
         "hexo": "^3.8.0",
         "hexo-generator-archive": "^0.1.5",
