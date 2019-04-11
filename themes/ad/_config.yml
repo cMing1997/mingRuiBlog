@@ -114,24 +114,21 @@ footer:
       - 
         name: "阮一峰的个人网站"
         path: "http://ruanyifeng.com/"
-  # -
-  #   title: "系列教程"
-  #   children:
-  #     -
-  #       name: "webpack4系列教程"
-  #       path: "https://godbmw.com/categories/webpack4%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B/"
-  #     -
-  #       name: "设计模式手册"
-  #       path: "https://godbmw.com/design-patterns/"
-  # -
-    # title: "抓到我"
-    # children: 
-    #   -
-    #     name: "掘金"
-    #     path: "https://juejin.im/user/5b91fcf06fb9a05d3c7fd4a5"
-    #   -
-    #     name: "思否"
-    #     path: "https://segmentfault.com/"
+  -
+    title: "系列笔记"
+    children:
+      -
+        name: "重学前端系列笔记"
+        path: "https://wuxin.netlify.com/categories/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%B3%BB%E5%88%97%E7%AC%94%E8%AE%B0/"
+  -
+    title: "抓到我"
+    children: 
+      -
+        name: "语雀"
+        path: "https://www.yuque.com/wuxintomgxue"
+      -
+        name: "github"
+        path: "https://github.com/CasualMing"
 
 footer_contact: "Email: 18327866033@163.com"
 
