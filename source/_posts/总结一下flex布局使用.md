@@ -1,7 +1,7 @@
 ---
 title: 总结一下flex布局使用
 date: 2018-9-5
-categories: flex布局
+categories: 布局
 tags:
   - css
   - flex局的总结

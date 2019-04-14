@@ -1,7 +1,7 @@
 ---
 title: Vue之组件化
 date: 2018-4-11
-categories: 组件化
+categories: Vue
 tags:
   - Vue
   - 组件定义

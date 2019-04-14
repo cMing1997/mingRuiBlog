@@ -1,7 +1,7 @@
 ---
 title: webpack的基本配置
 date: 2018-4-20
-categories: webpack的基本配置
+categories: webpack
 tags:
   - webpack配置
 ---

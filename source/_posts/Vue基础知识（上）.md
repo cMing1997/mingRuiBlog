@@ -1,7 +1,7 @@
 ---
 title: Vue基础知识（上）
 date: 2018-3-5
-categories: Vue基础知识
+categories: Vue
 tags: 
   - Vue
   - 交互模式

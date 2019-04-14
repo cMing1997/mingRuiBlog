@@ -1,7 +1,7 @@
 ---
 title: Vue之路由
 date: 2018-4-18
-categories: Vue之路由
+categories: Vue
 tags: 
   - Vue
   - vue-Router

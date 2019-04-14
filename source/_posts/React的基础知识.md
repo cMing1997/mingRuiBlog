@@ -1,7 +1,7 @@
 ---
 title: React的基础知识
 date: 2018-10-16
-categories: 初尝React
+categories: React
 tags:
   - React
 ---

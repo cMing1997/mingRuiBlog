@@ -1,7 +1,7 @@
 ---
 title: Vuex的组件间传值
 date: 2018-8-10
-categories: Vuex的组件传值
+categories: Vue
 tags:
   - Vue
   - VueX

@@ -1,7 +1,7 @@
 ---
 title: 总结一下Vue项目集成Mui的问题
 date: 2018-9-1
-categories: 集成Mui
+categories: Vue
 tags:
   - Mui
   - Vue集成Mui

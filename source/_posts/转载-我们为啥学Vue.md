@@ -1,7 +1,7 @@
 ---
 title: 转载-我们为什么要学Vue
 date: 2018-7-11
-categories: 为啥要学Vue
+categories: Vue
 tags: 
   - Vue
 ---

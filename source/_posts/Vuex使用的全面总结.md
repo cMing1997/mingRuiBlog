@@ -1,7 +1,7 @@
 ---
 title: Vuex的使用总结
 date: 2018-10-21
-categories: Vuex的使用总结
+categories: Vue
 tags:
   - Vue
   - VueX的总结

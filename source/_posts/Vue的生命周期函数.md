@@ -1,7 +1,7 @@
 ---
 title: Vue的生命周期函数
 date: 2018-4-15
-categories: Vue生命周期函数
+categories: Vue
 tags:
   - Vue生命周期函数
 ---

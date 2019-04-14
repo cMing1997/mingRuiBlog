@@ -1,7 +1,7 @@
 ---
 title: Vue之周边零碎知识
 date: 2018-3-8
-categories: Vue的零碎知识
+categories: Vue
 tags:
   - Vue
   - Vue中的this指向

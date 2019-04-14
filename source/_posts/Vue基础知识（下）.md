@@ -1,7 +1,7 @@
 ---
 title: Vue基础知识（下）
 date: 2018-3-7
-categories: Vue基础知识（下）
+categories: Vue
 tags:
   - Vue
   - watch 方法

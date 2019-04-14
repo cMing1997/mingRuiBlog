@@ -1,7 +1,7 @@
 ---
 title: Vue项目的总结
 date: 2018-10-28
-categories: 项目总结
+categories: Vue
 tags: 
   - Vue
   - 项目总结
