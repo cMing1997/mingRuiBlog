@@ -673,7 +673,9 @@ main {
     .passage-copyright div {
       line-height: 2; }
     .passage-copyright a {
-      transition: all .1s linear; }
+      transition: all .1s linear;
+      word-break: break-all;
+     }
       .passage-copyright a:hover {
         color: #F4511E; }
   .passage-meta {
