@@ -1,8 +1,8 @@
 author: 程明锐
 
-keywords: '程明锐, 程明锐的独立博客, 程明锐的博客, 前端, 前端开发, 前端博客, javascript, ajax, nodejs, Vue，前端，技术，分享，学习，记录,个人成长'
+keywords: '程明锐, 程明锐的独立博客, 程明锐的博客, 前端, 前端开发, 前端博客, javascript, ajax, nodejs, Vue，前端，技术，分享，学习，记录,个人成长，程明锐的个人网站|人生若只如初见，何事悲风秋画扇，偶尔努力，时常颓废的矛盾综合体，也不清楚自己喜欢什么，从小到大坚持最久的大概就是睡觉跟吃饭吧，但是很高兴与你在这里相遇。希望我们能一起进步'
 
-description: 偶尔努力，时常颓废的矛盾综合体，也不清楚自己喜欢什么，从小到大坚持最久的大概就是睡觉跟吃饭吧，但是很高兴与你在这里相遇。希望我们能一起进步
+description: 程明锐的个人网站|人生若只如初见，何事悲风秋画扇，偶尔努力，时常颓废的矛盾综合体，也不清楚自己喜欢什么，从小到大坚持最久的大概就是睡觉跟吃饭吧，但是很高兴与你在这里相遇。希望我们能一起进步
 
 # 导航栏头部名称
 nav_name: 无心
@@ -60,11 +60,11 @@ passwords:
   - efe07af7441da2b69c4a41e42e73be4db47f66010a56900788a458354a7373ec # godbmw
 
 share:
-  twitter: true
-  facebook: true
+  twitter: false
+  facebook: false
   weibo: true
-  qq: true
-  wechat: true
+  qq: false
+  wechat: false
 
 analytics:
   baidu:
@@ -139,4 +139,10 @@ friends:
     avatar: https://gravatar.loli.net/avatar/b20750c40cd911256ddbd76a7f7e724c
     site: https://godbmw.com/
     meta: 主题作者
+    show: true
+  - 
+    nickname: 石璞东
+    avatar: /images/dong.jpg
+    site: http://www.shipudong.com
+    meta: 要学会哈哈哈
     show: true
