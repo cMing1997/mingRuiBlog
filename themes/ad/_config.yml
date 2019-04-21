@@ -57,7 +57,7 @@ welcome:
 # 存放sha256加密的密码
 # 拥有所有加锁文章的阅读权限
 passwords: 
-  - efe07af7441da2b69c4a41e42e73be4db47f66010a56900788a458354a7373ec # godbmw
+  - 8b269a355119aab55807687de32e16d2c77592a10e3006139661ce5c4483c262 # 无心同学
 
 share:
   twitter: false
