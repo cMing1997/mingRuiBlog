@@ -1,14 +1,14 @@
 author: 程明锐
 
-keywords: '程明锐, 程明锐的独立博客, 程明锐的博客, 前端, 前端开发, 前端博客, javascript, ajax, nodejs, Vue，前端，技术，分享，学习，记录,个人成长，程明锐的个人网站|人生若只如初见，何事悲风秋画扇，偶尔努力，时常颓废的矛盾综合体，也不清楚自己喜欢什么，从小到大坚持最久的大概就是睡觉跟吃饭吧，但是很高兴与你在这里相遇。希望我们能一起进步'
+keywords: '程明锐, 程明锐的独立博客, 程明锐的博客, 前端, 前端开发, 前端博客, javascript, ajax, nodejs, Vue，前端，技术，分享，学习，记录,个人成长，程明锐的个人网站|人生若只如初见，何事秋风悲画扇，偶尔努力，时常颓废的矛盾综合体，也不清楚自己喜欢什么，从小到大坚持最久的大概就是睡觉跟吃饭吧，但是很高兴与你在这里相遇。希望我们能一起进步'
 
-description: 程明锐的个人网站|人生若只如初见，何事悲风秋画扇，偶尔努力，时常颓废的矛盾综合体，也不清楚自己喜欢什么，从小到大坚持最久的大概就是睡觉跟吃饭吧，但是很高兴与你在这里相遇。希望我们能一起进步
+description: 程明锐的个人网站|人生若只如初见，何事秋风悲画扇，偶尔努力，时常颓废的矛盾综合体，也不清楚自己喜欢什么，从小到大坚持最久的大概就是睡觉跟吃饭吧，但是很高兴与你在这里相遇。希望我们能一起进步
 
 # 导航栏头部名称
 nav_name: 无心
 
 # 导航栏座右铭
-motto: "人生若只如初见，何事悲风秋画扇"
+motto: "人生若只如初见，何事秋风悲画扇"
 
 github: "https://github.com/CasualMing"
 
@@ -57,12 +57,12 @@ welcome:
 # 存放sha256加密的密码
 # 拥有所有加锁文章的阅读权限
 passwords: 
-  - 8b269a355119aab55807687de32e16d2c77592a10e3006139661ce5c4483c262 # 无心同学
+  - f3510ec0e231838f25a339252def6d28bd56d7d800351bf23d93e7ab57ed90cd # wuxintongxue
 
 share:
   twitter: false
   facebook: false
-  weibo: true
+  weibo: false
   qq: false
   wechat: false
 
@@ -121,7 +121,7 @@ footer:
         name: "重学前端系列笔记"
         path: "https://wuxin.netlify.com/categories/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%B3%BB%E5%88%97%E7%AC%94%E8%AE%B0/"
   -
-    title: "抓到我"
+    title: "逃窜之地"
     children: 
       -
         name: "语雀"
