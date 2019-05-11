@@ -2,7 +2,7 @@
 title: url、base64、blob相互转换方法
 date: 2019-4-28
 categories: JavaScript骚操作
-cover: https://ws1.sinaimg.cn/large/006ubcvVgy1g2am01f13lj31hc0xctg7.jpg
+cover: https://raw.githubusercontent.com/CasualMing/BlogPhoto/master/615ffe0793%20(1).jpg
 tags:
   - base64
   - 转换
