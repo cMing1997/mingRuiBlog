@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+    .app{
+        max-width: 100%;
+        max-height: 95%;
+        overflow-y: scroll;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid black;
+        padding: 10px 5px;
+    }
+    .item {
+        font-size: 20px;
+        font-weight: 300;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        background: rgba(255, 255, 255, .2);
+    }
+
+    .typed-cursor {
+        opacity: 1;
+        animation: typedjsBlink 0.7s infinite;
+        -webkit-animation: typedjsBlink 0.7s infinite;
+        animation: typedjsBlink 0.7s infinite;
+    }
+
+    @keyframes typedjsBlink {
+        50% {
+            opacity: 0.0;
+        }
+    }
+
+    @-webkit-keyframes typedjsBlink {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .typed-fade-out {
+        opacity: 0;
+        transition: opacity .25s;
+        -webkit-animation: 0;
+        animation: 0;
+    }
+</style>
+
+<body>
+   <div class="app">
+    <h1 class="item"></h1>
+   </div>
+    <script src="./rough-async.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+        window.onload = function () {
+            const extend = (base, ...extensions) => Object.assign({}, base, ...extensions)
+
+            const parseColor = ({
+                h,
+                s,
+                l,
+                a
+            }) => `hsla(${h},${s}%,${l}%,${a})`;
+
+            const Color = extend.bind(null, {
+                h: 0,
+                s: 100,
+                l: 100,
+                a: 1
+            });
+
+            const Vector = extend.bind(null, {
+                x: 0,
+                y: 0
+            });
+
+            const Particle = extend.bind(null, {
+                pos: Vector(),
+                vel: Vector(),
+                angle: 0,
+                speed: 0,
+                radius: 0,
+                rotation: 0,
+                color: Color()
+            })
+            // 设置主要气球主要的几种颜色，避免出现不合适的颜色
+            const colors = [
+                Color({
+                    h: 20,
+                    s: 100,
+                    l: 50
+                }),
+                Color({
+                    h: 200,
+                    l: 50
+                }),
+                Color({
+                    h: 300,
+                    l: 50
+                }),
+                Color({
+                    h: 100,
+                    l: 40
+                }),
+            ];
+
+            const animationLoop = scope => {
+                if (scope.animation) {
+                    scope.animation(animationLoop.bind(null, scope))
+                }
+
+                const {
+                    ctx
+                } = scope
+                const {
+                    canvas
+                } = ctx
+                const rc = rough.canvas(canvas)
+                ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+                scope.particles.map((p, i) => {
+                    p.pos.y -= p.speed
+                    if (i % 2) {
+                        p.pos.x = p.pos.x + Math.sin(p.angle) * .2
+                    } else {
+                        p.pos.x = p.pos.x - Math.cos(p.angle) * .2
+                    }
+                    p.angle += .01
+                    rc.circle(p.pos.x, p.pos.y, p.radius, {
+                        fill: parseColor(p.color),
+                        roughness: Math.random() * 1.5,
+                        hachureGap: p.hachureGap,
+                        hachureAngle: p.hachureAngle
+                    })
+                    rc.line(p.pos.x, p.pos.y + p.radius * 1.2, p.pos.x, p.pos.y + p.radius / 2, {
+                        bowing: Math.random() * 3
+                    })
+                    if (p.pos.y + p.radius * 3 < 0) {
+                        p.pos.y = canvas.height + p.radius * 3
+                        p.pos.x = Math.random() * (canvas.width - p.radius)
+                    }
+                })
+            };
+            const scope = {
+                animation: requestAnimationFrame.bind(null),
+                ctx: document.createElement('canvas').getContext('2d'),
+                rotation: 0,
+                particles: []
+            };
+
+            ~(scope => {
+                const {
+                    ctx: {
+                        canvas
+                    }
+                } = scope
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                document.body.appendChild(canvas)
+                // 页面气球数量
+                let particleCount = 80
+                while (particleCount--) {
+                    scope.particles.push(Particle({
+                        pos: {
+                            x: Math.random() * canvas.width,
+                            y: Math.random() * canvas.height
+                        },
+                        speed: Math.random() + .2,
+                        radius: Math.random() * 60 + 20,
+                        color: colors[Math.floor(Math.random() * colors.length)],
+                        hachureAngle: Math.random() * 4,
+                        hachureGap: Math.random() * 8
+                    }))
+                }
+                animationLoop(scope)
+            })(scope);
+
+
+            var typed = new Typed(".item", {
+                strings: [
+                    "还记得刚相识是在18年3月，那个时候我在实习，时间比较多，美丽的小仙女就闯进了我的生活中，其实最开始你的收到的那个提醒是我群发的(╥╯^╰╥)，抱歉，让你失望了，但是随着聊天的继续，我发现你的三观和我的特别聊的来，虽然你曾说“和你聊的来的，那么和别人也聊的来”，但是我内心其实奢求过，你是因为我所以才会和我有聊不完的话题，之后由于我在培训，那个时候每天从早上上课到晚上，没有太多时间。所以忽略了很多。你那个时候也在辛苦的打暑假工，我知道打暑假工的时候休息极少，所以想着能少打扰你就少大打扰你，这样你休息的时间也就多一些。就这样你到了开学的时候，我到了学习的尾声。那个时候学习的东西比较难，虽然已经意识到我们之间的关系已经微妙变化，但是已经没有精力顾暇了。我也试过找过长沙的工作，但是看到网上长沙适合的工作几乎没有。所以想着先在武汉站稳，但是无奈关系已经回不去了。放心，我知道你不喜欢我送礼物你，这是最后一次了，之所以选择六一，是觉得这个时候其他小朋友都有礼物了，那你这个大可爱也应该有的呢"
+                ],
+                smartBackspace: true,
+            })
+        }
+    </script>
+</body>
+
+</html>
