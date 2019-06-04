@@ -17,6 +17,23 @@ favicon:
   icon: /images/favicon.ico
   touch_icon: /images/touch-icon.png
 
+# 一言 采用个人接口 https://api.imjad.cn/hitokoto.md
+oneSay:
+  istrue: true
+  cat: Novel   # a	Anime - 动画 b	Comic - 漫画 c	Game - 游戏 d	Novel - 小说 e	原创 f	来自网络 g	其他 ，参数不传就是任意
+  charset: utf-8    # string 返回字符集，支持 gbk/utf-8  默认utf-8
+  length: 1000  # int 返回一句话的长度限制，超出则打断并添加省略号
+  encode: json   #string 返回数据格式，js:返回脚本，jsc：返回指定函数名的回调函数。空：返回纯文本。默认 json 
+  fun: sync # string 异步调用时，指定 CallBack 的函数名
+  source: #int 值为 0 获取「系统收录」，为 1 获取「我的一言」 不填就是随机
+
+# APalyer音乐
+aplayer:
+  isplay: true
+  api: "https://api.uomg.com/api/rand.music/"
+  sort: "热歌榜"     #选择输出分类[热歌榜|新歌榜|飙升榜|抖音榜|电音榜]，为空输出热歌榜
+  format: "json"  #	选择输出格式[json|mp3]
+
 # RSS文件位置
 rss: 
 

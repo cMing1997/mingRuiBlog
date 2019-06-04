@@ -1,10 +1,9 @@
 (() => {
   window.AD_CONFIG.layer = (() => {
     let cbs = [];
-    
     return {
       add: (cb) => {
-        if(cbs.includes(cb)) {
+        if (cbs.includes(cb)) {
           return false;
         }
         cbs.push(cb);
@@ -12,7 +11,7 @@
       },
       remove: (cb) => {
         let index = cbs.indexOf(cb);
-        if(index === -1) {
+        if (index === -1) {
           return false;
         }
         cbs.splice(index, 1);
@@ -28,9 +27,9 @@
 
   const loadScript = (src) => {
     let exists = false;
-  
+
     return () => new Promise((resolve) => {
-      if(exists) return resolve();
+      if (exists) return resolve();
       // 防止没有触发下方的onload时候, 又调用此函数重复加载
       exists = true;
       // 开始加载
@@ -59,6 +58,7 @@
     '/js/scroll.js',
     '/js/backTop.js',
     '/js/time.js',
+    '/js/oneTalk.js',
     '/js/search.js',
     '/js/passage.js'
   ];

@@ -52,3 +52,29 @@
     </div>
   <% } %>
 </div>
+
+ <% if(theme.oneSay.istrue){ %>
+    <script>
+        (function(){
+          var div = document.createElement("div");
+          div.setAttribute("class","oneTalkSay");
+          var stick = document.querySelector(".home");
+          stick.insertBefore(div,stick.children[0]);
+          // 一言
+          fetch(`https://api.imjad.cn/hitokoto/?cat=<%=theme.oneSay.cat%>&charset=<%=theme.oneSay.charset%>&length=<%= theme.oneSay.length %>&encode=<%=theme.oneSay.encode%>&fun=<%=theme.oneSay.fun%>&source=<%=theme.oneSay.source%>`)
+              .then(response => {
+                  if (response.ok) {
+                      return response.json()
+                  } else {
+                      div.innerHTML = "一言请求失败";
+                  }
+              })
+              .then(function (data) {
+                  div.innerText = data.hitokoto +"——————"+"作者："+data.author;
+              })
+              .catch(function (err) {
+                 div.innerText =err;
+              });
+        })()
+    </script>
+<% } %>
