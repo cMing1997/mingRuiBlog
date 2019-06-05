@@ -106,7 +106,7 @@ html2canvas(document.body, {
 ### 野心
 由于要考虑其他格式，所以我又不满足于只保存为 **`PDF`** 文档，想可以保存 **`Word`** **`Excel`**，于是又在网上找，找到了 **`tableExport.jquery.plugin`**这个插件是前端可以独立生成的。
 这个插件说是可以生成**`JSON，XML，PNG，CSV，TXT，SQL，MS-Word，Ms-Excel，Ms-Powerpoint，PDF`**
-```js
+```html
 //文档
 //jquery Plugin //必引
  <script type="text/javascript" src="tableExport.js">
@@ -119,7 +119,8 @@ html2canvas(document.body, {
 <script type="text/javascript" src="jspdf/libs/sprintf.js">
 <script type="text/javascript" src="jspdf/jspdf.js">
 <script type="text/javascript" src="jspdf/libs/base64.js">
-
+```
+```javascript
 //Usage
 //使用方法
 onClick ="$('#tableID').tableExport({type:'pdf',escape:'false'});"

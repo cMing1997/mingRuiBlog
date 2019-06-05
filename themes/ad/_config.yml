@@ -30,7 +30,7 @@ oneSay:
 # APalyer音乐
 aplayer:
   isplay: true
-  api: "https://api.uomg.com/api/rand.music/"
+  api: "https://api.uomg.com/api/rand.music"
   sort: "热歌榜"     #选择输出分类[热歌榜|新歌榜|飙升榜|抖音榜|电音榜]，为空输出热歌榜
   format: "json"  #	选择输出格式[json|mp3]
 

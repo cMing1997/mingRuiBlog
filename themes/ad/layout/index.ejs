@@ -70,7 +70,7 @@
                   }
               })
               .then(function (data) {
-                  div.innerText = data.hitokoto +"——————"+"作者："+data.author;
+                  div.innerHTML = data.hitokoto +"——————"+ "作者：" +data.author;
               })
               .catch(function (err) {
                  div.innerText =err;
