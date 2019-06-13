@@ -126,8 +126,8 @@ footer:
     title: "博客推荐"
     children:
       - 
-        name: "GodBMW"
-        path: "https://godbmw.com/"
+        name: "无心"
+        path: "https://wuxin.netlify.com/"
       - 
         name: "阮一峰的个人网站"
         path: "http://ruanyifeng.com/"
@@ -162,4 +162,11 @@ friends:
     avatar: /images/dong.jpg
     site: http://www.shipudong.com
     meta: 要学会哈哈哈
+    show: true
+  - 
+    nickname: 钻芒博客
+    avatar: https://www.zmki.cn/wp-content/uploads/2019/02/zmki-favicon-.png
+    site: https://www.zmki.cn/
+    meta: 记录自己平时的学习&生活，html、Photoshop、Pr、办公基础套件大全（善用Excel函数） 
+            PHP、MySQL、JavaScript半吊子选手，学习充电中..
     show: true
