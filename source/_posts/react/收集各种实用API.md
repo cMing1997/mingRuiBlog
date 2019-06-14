@@ -96,11 +96,11 @@ encode: json 输出格式（缺省直接显示图片）<br />**例如：**<br /
 ### ~~土味情话~~ 
 > **注意：这个接口废弃了**
 
-~~地址：https://api.lovelive.tools/api/SweetNothings ~~      
+~~地址：https://api.lovelive.tools/api/SweetNothings~~
 <a name="TxaYu"></a>
 ### 天气接口
 <a name="dx2HQ"></a>
-#### 1. SOJSON博客提供的天气接口 地址
+#### 1. SOJSON博客提供的天气接口 [地址](https://www.sojson.com/blog/305.html)
 > **注意：这个接口也只能后台调用**
 
 <a name="AwTqz"></a>
@@ -256,7 +256,3 @@ $.ajax({
 | 参数名 | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | --- |
 | sid | 是 | string | 歌曲id |
-
-
-
-
