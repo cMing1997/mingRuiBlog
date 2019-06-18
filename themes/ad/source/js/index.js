@@ -58,7 +58,6 @@
     '/js/scroll.js',
     '/js/backTop.js',
     '/js/time.js',
-    '/js/oneTalk.js',
     '/js/search.js',
     '/js/passage.js'
   ];
@@ -66,7 +65,6 @@
   // load after all srcs loaded
   const windowSrcs = [
     '/js/leancloud.js',
-    '/js/share.js',
     '/js/reward.js',
     '/js/mathjax.js'
   ];

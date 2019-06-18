@@ -25,6 +25,8 @@
       title = "分类"
     } else if (page.type === "friends") {
       title = "友链"
+    }else if (page.type === "photo") {
+      title = "相册"
     }
 
     page.current && page.current > 1 && (title = `${title} | 第${page.current}页`);
@@ -68,7 +70,7 @@
 
   <%- partial('components/config') %>
 
-  <%- js(['/vendor/sha256.min.js', '/js/auth.js', '/js/index.js', '/vendor/qrcode.min.js']) %>
+  <%- js(['/js/auth.js', '/js/index.js', '/vendor/qrcode.min.js']) %>
 
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon.icon %>">
