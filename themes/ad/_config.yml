@@ -31,7 +31,7 @@ oneSay:
 aplayer:
   isplay: true
   api: "https://api.uomg.com/api/rand.music"
-  sort: "热歌榜"     #选择输出分类[热歌榜|新歌榜|飙升榜|抖音榜|电音榜]，为空输出热歌榜
+  sort: "抖音榜"     #选择输出分类[热歌榜|新歌榜|飙升榜|抖音榜|电音榜]，为空输出热歌榜
   format: "json"  #	选择输出格式[json|mp3]
 
 # RSS文件位置
@@ -105,6 +105,12 @@ nav:
   -
     name: "首页"
     path: "/"
+  -
+    name: "手擦的工具文章"
+    path: "/passages/note/优秀文章列表/
+  -
+    name: "API"
+    path: "/passages/react/收集各种实用api/
   -
     name: "归档"
     path: "/archives/"
