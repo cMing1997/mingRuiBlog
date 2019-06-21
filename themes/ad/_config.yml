@@ -107,11 +107,11 @@ nav:
     path: "/"
   -
     name: "手擦的工具文章"
-    path: "/passages/note/优秀文章列表/
+    path: "/passages/note/优秀文章列表/"
   -
     name: "API"
-    path: "/passages/react/收集各种实用api/
-  -
+    path: "/passages/react/收集各种实用api/"
+  - 
     name: "归档"
     path: "/archives/"
   -
