@@ -1,7 +1,7 @@
 ---
 title: React的基础知识
 date: 2018-10-16
-categories: React
+categories: react学习记录
 tags:
   - React
 ---
@@ -16,7 +16,7 @@ tags:
 
 - react声明组件的方式，使用 ES6 的 `class` 声明组件，然后使用
 
-```jsx
+```js
 class Some extends React.component{
   render () {
    return(
@@ -38,7 +38,7 @@ class Some extends React.component{
 
 **导入组件**
 
-```jsx
+```js
   import Some from '组件文件路径'  
 // 注意，要想在其他的文件内使用公共组件，那么在声明组件的时候，
 // 就需要使用 `exprot default` 导出该声明的组件
@@ -48,7 +48,7 @@ class Some extends React.component{
 
 **props：接收组件之间传值的**
 
-```jsx
+```js
   class Some extends React.Component{
    constructor(props){
        super(props)
@@ -66,7 +66,7 @@ class Some extends React.component{
 
 - 如果是在 `render` 函数外访问父组件传递过来的参数 ，那么就需要传递参数到 `constructor` 内
 
-```jsx
+```js
   constructor(props){
     super(props)
     console.log(props)
@@ -82,7 +82,7 @@ class Some extends React.component{
 
 **存储**
 
-```jsx
+```js
    constructor(){
       super()
       this.state={
@@ -95,7 +95,7 @@ class Some extends React.component{
 
 **使用state**
 
-```jsx
+```js
    render(){
     return(
       <div>{this.state.msg}</div>  //渲染之后为<div>故人心尚永，故心人不现</div>
@@ -105,7 +105,7 @@ class Some extends React.component{
 
 **使用外界传递的值props**
 
-```jsx
+```js
 //父组件中
 <Some address='学海无涯，回头是岸。放下屠刀，立地成佛，哦弥陀佛，善哉善哉'/>
 
@@ -122,7 +122,7 @@ class Some extends React.component{
 
 **on+事件名 使用驼峰命名方式**
 
-```jsx
+```js
   render(){
     return(
     <div onClick={this.headerClick}></div>
@@ -131,7 +131,7 @@ class Some extends React.component{
 ```
 **注册事件**
 
-```jsx
+```js
   class Some extends React.Component{
     headerClick(){
       console.log("夜里挑灯看剑，梦里吹角连营")   
@@ -153,7 +153,7 @@ class Some extends React.component{
 
 - **直接使用 `this.state.msg="这是一个测试代码" `**
 
-```jsx
+```js
  headerClick(){
   this.state.msg="在哪里跌倒，在哪里趴会儿"
  }
@@ -163,7 +163,7 @@ class Some extends React.component{
 
 - **使用 `this.setState({})` 改变值（推荐使用这种）**
 
-```jsx
+```js
  headerClick(){
   this.setState({msg:'贫穷限制了我们的想象力'
   })
@@ -175,7 +175,7 @@ class Some extends React.component{
 
 **使用setState()的时候，可以传递函数**
 
-```jsx
+```js
   this.setState(function(oldDate,props){
    return{ msg:124 }
 })
@@ -186,7 +186,7 @@ class Some extends React.component{
 > 由于 `setState` 是异步执行，所以，执行 `this.setState()` 设置值之后，想立马拿到，那么就需要放在 `setState()` 里的第二的参数回调内
 
 
-```jsx
+```js
   this.setState(()=>{
     return{ msg:125 }
   }, ()=>{ console.log(this.state.msg) })

@@ -106,7 +106,7 @@ nav:
     name: "首页"
     path: "/"
   -
-    name: "手擦的工具文章"
+    name: "收藏的工具文章"
     path: "/passages/note/优秀文章列表/"
   -
     name: "API"
@@ -145,7 +145,16 @@ footer:
     children:
       -
         name: "重学前端系列笔记"
-        path: "https://wuxin.netlify.com/categories/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%B3%BB%E5%88%97%E7%AC%94%E8%AE%B0/"
+        path: "/categories/重学前端系列笔记/"
+      -
+        name: "React系列学习笔记"
+        path: "/categories/react学习记录/"
+      -
+        name: "收藏的API"
+        path: "/passages/react/收集各种实用api/"
+      -
+        name: "收藏的工具以及优秀文章"
+        path: "/passages/note/优秀文章列表/"
   -
     title: "逃窜之地"
     children: 
