@@ -151,7 +151,7 @@ footer:
         path: "/categories/react学习记录/"
       -
         name: "收藏的API"
-        path: "/passages/react/收集各种实用api/"
+        path: "/passages/note/收集各种实用api/"
       -
         name: "收藏的工具以及优秀文章"
         path: "/passages/note/优秀文章列表/"
