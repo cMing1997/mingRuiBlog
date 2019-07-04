@@ -1,6 +1,6 @@
 ---
 title: JS常用函数集收集
-date: 2019-04-26 16:07:10 +0800
+date: 2019/7/3 10:08:34 
 tags: [函数集,转载]
 categories: 常用函数集
 cover: "https://cdn.nlark.com/yuque/0/2019/jpeg/221851/1555489235300-77ec8cfd-2be0-448e-a3d3-9dead9ff2d33.jpeg"
@@ -126,7 +126,7 @@ function cached(fn) {
         return hit || (cache[str] = fn(str))
     }
 }
-
+```
 
 ### 16、camelize：横线转驼峰命名
 ```javascript
@@ -183,9 +183,9 @@ Object.assign = Object.assign || function(){
     })
     return target
 }
-使用Object.assign可以浅克隆一个对象：
+//使用Object.assign可以浅克隆一个对象：
 let clone = Object.assign({}, target)
-简单的深克隆可以使用JSON.parse()和JSON.stringify()，这两个api是解析json数据的，所以只能解析除symbol外的原始类型及数组和对象
+//简单的深克隆可以使用JSON.parse()和JSON.stringify()，这两个api是解析json数据的，所以只能解析除symbol外的原始类型及数组和对象
 let clone = JSON.parse( JSON.stringify(target) )
 ```
 ### 21、clone：克隆数据，可深度克隆
@@ -578,7 +578,9 @@ function random(lower, upper){
 //random(0, 0.5) ==> 0.3567039135734613
 //random(2, 1) ===> 1.6718418553475423
 //random(-2, -1) ==> -1.4474325452361945
+```
 ### 40、Object.keys：返回一个由一个给定对象的自身可枚举属性组成的数组
+```javascript
 Object.keys = Object.keys || function keys(object) {
     if(object === null || object === undefined){
         throw new TypeError('Cannot convert undefined or null to object');
