@@ -18,6 +18,9 @@ date: 2019-03-23
    - qq群：`1022540298`
 微信：
  ![](https://d33wubrfki0l68.cloudfront.net/d51023ac87d8ae2f80fcb41d92c9cf65125abfa4/90128/images/wechat.png)
+ ### 想进一步了解这个码畜的
+ > 可以看这篇文章
+ [讲讲最近干了什么](https:wuxin.netlify.com/passages/note/讲讲最近干了什么/)
 
 ### NOW
 现在任职在武汉的《中国婚博会》，担任前端开发一职。主要负责原生开发 **`H5`** 以及公司老项目的更新。由于公司是开发自己的项目，所以平时相对时间较多一些。平时有很多的时间进行自我提升。
@@ -34,3 +37,4 @@ date: 2019-03-23
  - <a href="https://github.com/CasualMing/common-JS/blob/master/你不知道的%20JavaScript（下卷）.pdf">你不知道的JavaScript(下)</a>
  - <a href="https://github.com/CasualMing/common-JS/blob/master/《代码之髓：编程语言核心概念》-[日]西尾泰和.pdf">《代码之髓：编程语言核心概念》-[日]西尾泰和</a>
  - <a href="https://github.com/CasualMing/common-JS/blob/master/超实用的JavaScript代码段(代码逆袭).pdf">超实用的JavaScript代码段(代码逆袭)</a>
+
