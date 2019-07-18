@@ -2,7 +2,7 @@
 title: JavaScript基础知识之模块与脚本
 tags: [模块,脚本]
 categories: 重学前端系列笔记
-cover: "https://cdn.nlark.com/yuque/0/2019/jpeg/221851/1555489235300-77ec8cfd-2be0-448e-a3d3-9dead9ff2d33.jpeg"
+cover: "https://raw.githubusercontent.com/CasualMing/BlogPhoto/master/4d974773e5.jpg"
 date: 2019/7/2 18:15:32 
 
 ---

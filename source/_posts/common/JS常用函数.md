@@ -3,7 +3,7 @@ title: JS常用函数集收集
 date: 2019/7/3 10:08:34 
 tags: [函数集,转载]
 categories: 常用函数集
-cover: "https://cdn.nlark.com/yuque/0/2019/jpeg/221851/1555489235300-77ec8cfd-2be0-448e-a3d3-9dead9ff2d33.jpeg"
+cover: "https://raw.githubusercontent.com/CasualMing/BlogPhoto/master/f7caa8a7a0.jpg"
 
 ---
 #### 1、isStatic：检测数据是不是除了symbol外的原始数据

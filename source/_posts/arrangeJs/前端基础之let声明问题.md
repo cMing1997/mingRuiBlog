@@ -3,7 +3,7 @@ title: 前端基础之let声明问题
 date: 2019/7/9 17:05:47 
 tags: [let声明]
 categories: 重学前端系列笔记
-cover: "https://cdn.nlark.com/yuque/0/2019/jpeg/221851/1555489235300-77ec8cfd-2be0-448e-a3d3-9dead9ff2d33.jpeg"
+cover: "https://raw.githubusercontent.com/CasualMing/BlogPhoto/master/19a7ec2661.jpg"
 
 ---
 
