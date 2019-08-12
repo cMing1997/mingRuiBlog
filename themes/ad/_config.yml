@@ -126,9 +126,9 @@ nav:
   -
     name: "关于"
     path: "/about/"
-  -
-    name: "相册"
-    path: "/photo/"
+  # -
+  #   name: "相册"
+  #   path: "/photo/"
 
 footer:
   - 
@@ -199,4 +199,16 @@ friends:
     site: https://ainyi.com
     meta: 你的美好，我都记得
     avatar: https://raw.githubusercontent.com/Krryxa/WORK-LEARNING/master/images/ico.jpg
+    show: true
+  - 
+    nickname: FGHRSH的博客
+    site: https://www.fghrsh.net/
+    meta: 记录 日常点滴，分享些 我认为有趣的东西，还有 各种开箱、DIY展示 等等
+    avatar: https://cdn.fghrsh.net/blogcdn/2017/10/201710084617_3324.png
+    show: true
+  - 
+    nickname: 96SIR - Deng's Blog
+    site: https://www.96sir.com/
+    meta: 所谓人生不过是三五好友，一壶老酒，佳人相伴，无灾无难。
+    avatar: https://www.96sir.com/images/Thumbnail.png
     show: true
