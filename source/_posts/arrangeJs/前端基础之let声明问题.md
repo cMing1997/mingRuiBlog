@@ -7,9 +7,8 @@ cover: "https://raw.githubusercontent.com/CasualMing/BlogPhoto/master/19a7ec2661
 
 ---
 
-<a name="yuvss"></a>
 ### let变量问题
-<a name="Cywoi"></a>
+
 #### es6之前
 在EA6之前声明变量或者函数，都是使用 **`var`**  ，但是这种声明会有个问题，就是 **预处理 **不管是声明变量，还是声明函数，都会进行**预处理**  
 ```javascript
@@ -85,7 +84,8 @@ for(let i =0;i<10;i++){
 }
 // 当你运行这个代码的时候，你会发现可以打出 0~9 的一串数字。
 ```
-这里我就有点不懂了。为什么使用 **`let`** 就可以了。 在再次翻看MDN上面的例子时有个 **`let j = i`** ，看到这里不仅有点疑惑了，为啥平时我们写代码的时候可以不用写呢 ![image.png](https://cdn.nlark.com/yuque/0/2019/png/221851/1562593617300-71cc952b-7bf5-429b-b2a2-2e04f80921e0.png#align=left&display=inline&height=97&name=image.png&originHeight=224&originWidth=240&size=48660&status=done&width=104)，原来MDN为了容易理解，才这么写的。<br />翻了不少文章，都没怎么说明白，但是都猜想， **`let`** 在 **`for`** 循环中形成了局部作用域，每次循环都相当于在内存中赋值给了 **`for`** 循环作用域中的隐藏变量，然后打印的时候就可以打印期待的数值
+这里我就有点不懂了。为什么使用 **`let`** 就可以了。 在再次翻看MDN上面的例子时有个 **`let j = i`** ，看到这里不仅有点疑惑了，为啥平时我们写代码的时候可以不用写呢 ![image.png](https://raw.githubusercontent.com/CasualMing/BlogPhoto/master/921e0.png)
+原来MDN为了容易理解，才这么写的。<br />翻了不少文章，都没怎么说明白，但是都猜想， **`let`** 在 **`for`** 循环中形成了局部作用域，每次循环都相当于在内存中赋值给了 **`for`** 循环作用域中的隐藏变量，然后打印的时候就可以打印期待的数值
 ```javascript
 for(let i =0;i<10;i++){
    let j = i; // 此处的j为局部作用域中的隐藏内存变量
@@ -94,7 +94,8 @@ for(let i =0;i<10;i++){
    }
 }
 ```
-这里还有个疑问就是 **`let x = x`** 报错之后，再次 **`let x`** 依然报错<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/221851/1562659321374-c55608d9-beb3-4a84-89fb-13867c6eecd7.png#align=left&display=inline&height=293&name=image.png&originHeight=293&originWidth=743&size=21274&status=done&width=743)<br />研究之后发现：<br />**`let、var`** 在定义一个变量的时候。都会经历三个阶段 **创建内存、初始化变量、赋值**
+这里还有个疑问就是 **`let x = x`** 报错之后，再次 **`let x`** 依然报错<br />![image.png](https://raw.githubusercontent.com/CasualMing/BlogPhoto/master/c6eecd7.png)
+研究之后发现：<br />**`let、var`** 在定义一个变量的时候。都会经历三个阶段 **创建内存、初始化变量、赋值**
 ```javascript
 var a = "one";
 /*  上面一句代码， 可以分为
