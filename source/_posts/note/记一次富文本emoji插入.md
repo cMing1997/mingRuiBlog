@@ -3,7 +3,7 @@ title: 记一次富文本emoji插入
 date: 2019/7/15 18:20:32 
 tags: [聊天emoji集成]
 categories: 日常折腾
-cover: "https://cdn.nlark.com/yuque/0/2019/jpeg/221851/1563178506241-5441dcb9-66ea-4483-9b82-0a7451ba2b5e.jpeg"
+cover: "https://raw.githubusercontent.com/CasualMing/BlogPhoto/master/emoji.jpeg"
 
 ---
 
@@ -16,20 +16,18 @@ cover: "https://cdn.nlark.com/yuque/0/2019/jpeg/221851/1563178506241-5441dcb9-66
 
 [github代码地址](https://github.com/CasualMing/common-JS/blob/master/emojs.js/)
 
-
-![最后的效果](https://github.com/CasualMing/common-JS/blob/master/emojs.js/emojiGif.gif)
+![最后的效果](https://raw.githubusercontent.com/CasualMing/common-JS/master/emojs.js/emojiGif.gif)
 
 
 ### 插件
 > 其实最开始集成 `emoji` 的时候，一点思路都没有，于是想着先去网上找下插件，就找到了 [emoji插件](https://github.com/node-modules/emoji) 体验了一下还行，而且都是使用原生实现的，于是我就下载到本地，查看源码。
 
 然后发现他那主要是是根据预先设置的数组的数据，来设置 **`class`** 类名改变雪碧背景图的定位
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/221851/1563183924004-e886b92b-1fd9-425e-ac18-da5877922bb4.png#align=left&display=inline&height=564&name=image.png&originHeight=564&originWidth=1489&size=268618&status=done&width=1489)
+![image.png](https://raw.githubusercontent.com/CasualMing/common-JS/master/emojs.js/emoji-yu.png)
 
 这个库的数据数组，是使用 **`emoji`** 字体作为 **`key`** 值的保留数据的
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/221851/1563184114598-89303df5-506a-4936-8aca-e41b9ac9f92e.png#align=left&display=inline&height=408&name=image.png&originHeight=408&originWidth=585&size=28689&status=done&width=585)
+![image.png](https://raw.githubusercontent.com/CasualMing/common-JS/master/emojs.js/emoji_js.png)
 
-<a name="1bpZj"></a>
 #### 使用
 ```javascript
 // 需要自己定义显示的emoji字体  
