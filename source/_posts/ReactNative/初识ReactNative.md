@@ -6,7 +6,8 @@ categories: react-native系列学习
 cover: "https://raw.githubusercontent.com/CasualMing/BlogPhoto/master/react-native.png"
 
 ---
-
+> 内心一直有个小清新的梦，就是做一个属于自己的阅读，听歌的APP。在选择学习的时候，在`react-native` 跟新任框架 `flutter` 之间徘徊，之前看过别写的 `flutter` 代码，完全就是地狱嵌套。感觉那样写的代码之后特难维护，所以就选择 `react-native`，毕竟这个是类 `react` 语法，学习的成本也比 `flutter` 的 `dart` 简单。
+<!--more-->
 ### 前言
 > 内心一直有个小清新的梦，就是做一个属于自己的阅读，听歌的APP。在选择学习的时候，在`react-native` 跟新任框架 `flutter` 之间徘徊，之前看过别写的 `flutter` 代码，完全就是地狱嵌套。感觉那样写的代码之后特难维护，所以就选择 `react-native`，毕竟这个是类 `react` 语法，学习的成本也比 `flutter` 的 `dart` 简单。
 
