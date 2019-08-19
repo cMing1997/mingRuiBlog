@@ -1,5 +1,5 @@
 ---
-title:初识reactNative环境搭建
+title: 初识reactNative环境搭建
 date: 2019/8/18 21:58:22  
 tags: [初识react-native]
 categories: react-native系列学习
