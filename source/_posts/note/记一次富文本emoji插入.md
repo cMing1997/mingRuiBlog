@@ -16,17 +16,17 @@ cover: "https://raw.githubusercontent.com/CasualMing/BlogPhoto/master/emoji.jpeg
 
 [github代码地址](https://github.com/CasualMing/common-JS/blob/master/emojs.js/)
 
-![最后的效果](https://raw.githubusercontent.com/CasualMing/common-JS/master/emojs.js/emojiGif.gif)
+![最后的效果](https://raw.githubusercontent.com/CasualMing/common-JS/master/emojiGif.gif)
 
 
 ### 插件
 > 其实最开始集成 `emoji` 的时候，一点思路都没有，于是想着先去网上找下插件，就找到了 [emoji插件](https://github.com/node-modules/emoji) 体验了一下还行，而且都是使用原生实现的，于是我就下载到本地，查看源码。
 
 然后发现他那主要是是根据预先设置的数组的数据，来设置 **`class`** 类名改变雪碧背景图的定位
-![image.png](https://raw.githubusercontent.com/CasualMing/common-JS/master/emojs.js/emoji-yu.png)
+![image.png](https://raw.githubusercontent.com/CasualMing/common-JS/master/emoji-yu.png)
 
 这个库的数据数组，是使用 **`emoji`** 字体作为 **`key`** 值的保留数据的
-![image.png](https://raw.githubusercontent.com/CasualMing/common-JS/master/emojs.js/emoji_js.png)
+![image.png](https://raw.githubusercontent.com/CasualMing/common-JS/master/emoji_js.png)
 
 #### 使用
 ```javascript

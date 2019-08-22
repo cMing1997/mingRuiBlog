@@ -94,7 +94,8 @@ for(let i =0;i<10;i++){
    }
 }
 ```
-这里还有个疑问就是 **`let x = x`** 报错之后，再次 **`let x`** 依然报错<br />![image.png](https://raw.githubusercontent.com/CasualMing/BlogPhoto/master/c6eecd7.png)
+这里还有个疑问就是 **`let x = x`** 报错之后，再次 **`let x`** 依然报错
+![image.png](https://raw.githubusercontent.com/CasualMing/BlogPhoto/master/c6eecd7.png)
 研究之后发现：<br />**`let、var`** 在定义一个变量的时候。都会经历三个阶段 **创建内存、初始化变量、赋值**
 ```javascript
 var a = "one";
