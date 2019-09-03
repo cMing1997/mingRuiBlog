@@ -97,9 +97,6 @@ reward:
   -
     src: /images/wechat.png
     alt: "WeChat"
-  # -
-  #   src: /images/alipay.png
-  #   alt: "AliPay"
 
 nav:
   -
@@ -126,9 +123,6 @@ nav:
   -
     name: "关于"
     path: "/about/"
-  # -
-  #   name: "相册"
-  #   path: "/photo/"
 
 footer:
   - 
@@ -183,10 +177,9 @@ friends:
     show: true
   - 
     nickname: 钻芒博客
-    avatar: https://www.zmki.cn/wp-content/uploads/2019/02/zmki-favicon-.png
+    avatar: https://a-oss.zmki.cn/20190601/img_9878.jpg
     site: https://www.zmki.cn/
-    meta: 记录自己平时的学习&生活，html、Photoshop、Pr、办公基础套件大全（善用Excel函数） 
-            PHP、MySQL、JavaScript半吊子选手，学习充电中..
+    meta: 崇尚技术，乐享极致
     show: true     
   - 
     nickname: 飞鱼慕鸟
@@ -211,4 +204,10 @@ friends:
     site: https://www.96sir.com/
     meta: 所谓人生不过是三五好友，一壶老酒，佳人相伴，无灾无难。
     avatar: https://www.96sir.com/images/Thumbnail.png
+    show: true
+  - 
+    nickname: 逃离博客
+    site: https://www.escaped.cn/
+    meta: 做一个恰到好处的人
+    avatar: https://www.escaped.cn/oneindex/?/IMG/pic.png
     show: true
