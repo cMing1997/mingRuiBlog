@@ -70,7 +70,6 @@
                   }
               })
               .then(function (data) {
-                  // console.log(data)
                   div.innerHTML = `<p>【微语】：${data.hitokoto}——————作者${data.author}</p><span>#${data.catname}</span><span>#${data.source?data.source:随机}</span>`;
               })
               .catch(function (err) {
