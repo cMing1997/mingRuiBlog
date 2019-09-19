@@ -160,9 +160,9 @@
       el: '#site-comment',
       appId: leancloud.appid,
       appKey: leancloud.appkey,
-      notify: false,
-      verify: false,
-      avatar: "robohash",
+      notify: true,
+      verify: true,
+      avatar: "wavatar",
       placeholder: "正确填写邮箱, 才能及时收到回复哦♪(^∇^*)",
       path: getPsgID()
     });
