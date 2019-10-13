@@ -180,7 +180,7 @@ friends:
     avatar: https://a-oss.zmki.cn/20190601/img_9878.jpg
     site: https://www.zmki.cn/
     meta: 崇尚技术，乐享极致
-    show: false     
+    show: true     
   - 
     nickname: 飞鱼慕鸟
     avatar: https://view.moezx.cc/images/2019/05/27/example-97783.jpg
@@ -216,4 +216,10 @@ friends:
     meta: 技术分享,生活日常
     site: http://www.jianjieming.vip
     avatar: http://www.jianjieming.vip/usr/uploads/2019/08/167130151.jpg
+    show: true
+  - 
+    nickname: 一叶知秋
+    avatar: https://q.qlogo.cn/g?b=qq&s=100&nk=919666892
+    site: https://52aicy.cn
+    meta: 未相逢，也相知、又相识
     show: true
