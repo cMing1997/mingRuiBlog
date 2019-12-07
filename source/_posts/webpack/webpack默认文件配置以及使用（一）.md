@@ -6,9 +6,7 @@ categories: webpack学习笔记
 cover: "https://raw.githubusercontent.com/CasualMing/BlogPhoto/master/Snipaste_2019-12-07_19-16-17.png"
 
 ---
-
-有的时候在网站碰见一些优秀的文章，但是当时苦于没有验证学习的空间，所以只能浅尝辄止，
-收藏一些优秀的文章，等自己境界高一点再慢慢的品尝
+记录一下webpack学习笔记
 <!--more-->
 
 ### 一、安装
