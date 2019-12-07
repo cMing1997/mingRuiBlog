@@ -141,6 +141,9 @@ footer:
         name: "重学前端系列笔记"
         path: "/categories/重学前端系列笔记/"
       -
+        name: "webpack学习笔记"
+        path: "/categories/webpack/"
+      -
         name: "React系列学习笔记"
         path: "/categories/react学习记录/"
       -
