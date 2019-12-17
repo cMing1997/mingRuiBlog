@@ -1,16 +1,14 @@
 ---
-
 title: webpack分文件配置及使用（二）
-date: 2019/12/17  22:54:30
- tags: [webpack分文件配置]
+date: 2019/12/17 23:08:21 
+tags: [webpack分文件配置]
 categories: webpack学习笔记
 cover: "https://raw.githubusercontent.com/CasualMing/BlogPhoto/master/webpack分文件配置及使用（二）.png"
 
 ---
 
 webpack分配置文件进行配置笔记
-
-<!-- more-->
+<!--more-->
 
 #### 1、根据不同的文件执行不同的脚本进行打包
 
