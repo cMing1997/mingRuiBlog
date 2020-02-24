@@ -282,3 +282,11 @@ $.ajax({
 | 参数名 | 必选 | 类型 | 说明 |
 | :--- | :--- | :--- | --- |
 | sid | 是 | string | 歌曲id |
+
+
+#### 免费开源API
+> ALAPI，免费实用的数据接口,为开发者提供各种免费API服务!
+###### 1、接口地址：https://alapi.cn/
+
+>收集免费的接口服务,做一个api的搬运工
+###### 2、接口地址：https://github.com/fangzesheng/free-api

@@ -174,7 +174,7 @@ friends:
     show: true
   - 
     nickname: 石璞东
-    avatar: /images/dong.jpg
+    avatar: http://www.shipudong.com/images/friends/dong.jpg
     site: http://www.shipudong.com
     meta: 要学会哈哈哈
     show: true
@@ -213,12 +213,12 @@ friends:
     site: https://www.escaped.cn/
     meta: 做一个恰到好处的人
     avatar: https://www.escaped.cn/logo.jpg
-    show: true
+    show: false
   - 
     nickname: Jiemingの日常
     meta: 技术分享,生活日常
-    site: http://www.jianjieming.vip
-    avatar: http://www.jianjieming.vip/usr/uploads/2019/08/167130151.jpg
+    site: http://jianjieming.com
+    avatar: http://dns.jianjieming.com/image/head-portrait/333.jpg
     show: true
   - 
     nickname: 一叶知秋
