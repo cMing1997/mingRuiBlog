@@ -104,7 +104,7 @@ nav:
     path: "/"
   -
     name: "收藏的工具文章"
-    path: "/passages/note/优秀文章列表/"
+    path: "/passages/note/优秀开源列表/"
   -
     name: "API"
     path: "/passages/note/收集各种实用api/"
