@@ -151,7 +151,7 @@ footer:
         path: "/passages/note/收集各种实用api/"
       -
         name: "收藏的工具以及优秀文章"
-        path: "/passages/note/优秀文章列表/"
+        path: "/passages/note/优秀开源列表/"
   -
     title: "逃窜之地"
     children: 
@@ -166,12 +166,6 @@ footer_contact: "Email: 18327866033@163.com"
 
 friends_avatar_cdn: 
 friends:
-  -
-    nickname: GodBMW
-    avatar: https://gravatar.loli.net/avatar/b20750c40cd911256ddbd76a7f7e724c
-    site: https://godbmw.com/
-    meta: 主题作者
-    show: false
   - 
     nickname: 石璞东
     avatar: http://www.shipudong.com/images/friends/dong.jpg
@@ -209,12 +203,6 @@ friends:
     avatar: https://www.96sir.com/images/Thumbnail.png
     show: true
   - 
-    nickname: 逃离博客
-    site: https://www.escaped.cn/
-    meta: 做一个恰到好处的人
-    avatar: https://www.escaped.cn/logo.jpg
-    show: false
-  - 
     nickname: Jiemingの日常
     meta: 技术分享,生活日常
     site: http://jianjieming.com
@@ -225,4 +213,10 @@ friends:
     avatar: https://q.qlogo.cn/g?b=qq&s=100&nk=919666892
     site: https://52aicy.cn
     meta: 未相逢，也相知、又相识
+    show: true
+  - 
+    nickname: 只是学习学习
+    avatar: https://fengzxia.gitee.io/images/logo.png
+    site: https://fengzxia.gitee.io/
+    meta: 专注于Java Web开发，Python爬虫
     show: true
